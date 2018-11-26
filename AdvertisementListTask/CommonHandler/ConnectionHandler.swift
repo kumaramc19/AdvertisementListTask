@@ -27,10 +27,6 @@ final class ConnectionHandler {
         URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {
-                    // if let json = try JSONSerialization.jsonObject(with: data, options:.allowFragments) as? [String:Any] {
-                    // print(json)
-                    // completionHandler( json , nil )
-                    // }
                     let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String : Any]
                  //   print("Response:\(json)")
                     completionHandler( json , nil )
@@ -57,10 +53,6 @@ final class ConnectionHandler {
         session.dataTask(with: request) { (data, response, error) in
             if let data = data {
                 do {
-                    //                    if let json = try JSONSerialization.jsonObject(with: data, options:.allowFragments) as? [String:Any] {
-                    //                        print(json)
-                    //                        completionHandler( json , nil )
-                    //                    }
                     let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String : Any]
                     completionHandler( json , nil )
                 } catch {

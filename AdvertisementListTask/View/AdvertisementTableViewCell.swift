@@ -11,7 +11,6 @@ import UIKit
 class AdvertisementTableViewCell: UITableViewCell {
 
     @IBOutlet weak var nameLb: UILabel!
-    
     @IBOutlet weak var abstractLb: UILabel!
     @IBOutlet weak var titleLb: UILabel!
     @IBOutlet weak var dateLb: UILabel!

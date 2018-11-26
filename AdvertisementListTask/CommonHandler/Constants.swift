@@ -24,9 +24,8 @@ struct Constants {
 
     //MARK: API constants
     struct API {
-        //static let BaseURL = "http://www1.sparklnow.com.farshore.net/api/v1/"
         static let BaseURL = "http://api.nytimes.com/svc/mostpopular/v2/mostviewed/all-sections/7.json?api-key=1a821d74e64e4a789ae0e76b6b858ac2"
-        static let Login = BaseURL
+        
     }
     //MARK: Identifier constants
     struct Storyboard {

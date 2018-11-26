@@ -34,18 +34,9 @@ class AdvertisementDetailView: UIView {
         dateLb.text = product.published_date
         AdvertisementImgview?.kf.setImage(with: URL(string: ((product.mediaList[0] ).mediaMetaData[0] ).url ))
     }
-    
+    //MARK:- Back button to pop previous view controller
     @IBAction func popup_BackBtn(_ sender: Any) {
         viewController.PopToPreviousViewController()
     }
-
-    
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
 
 }

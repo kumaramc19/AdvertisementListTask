@@ -33,7 +33,7 @@ class AdvertiseMentViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    //MARK:- Instance Methods
     func ShowAdvertisementDetailView(serviceModel:ServicesModel) {
         let productscreenVc: AdvertisementDetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "AdvertisementDetailViewController") as! AdvertisementDetailViewController
          productscreenVc.detailViewContent = serviceModel

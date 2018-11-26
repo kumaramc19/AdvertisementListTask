@@ -12,9 +12,7 @@ import Kingfisher
 class AdvertisementView: UIView , UITableViewDelegate, UITableViewDataSource {
     
     var viewController:AdvertiseMentViewController!
-    
     @IBOutlet weak var MainTitle: UILabel!
-    
     func setcontroller(controller:AdvertiseMentViewController) -> Void {
     
         viewController = controller
@@ -39,17 +37,14 @@ class AdvertisementView: UIView , UITableViewDelegate, UITableViewDataSource {
         cell?.thumbImgView?.kf.setImage(with: URL(string: ((product.mediaList[0] ).mediaMetaData[0] ).url ))
         cell?.thumbImgView?.layer.cornerRadius = 15.0
         cell?.thumbImgView?.clipsToBounds = true
-        
         return cell!
 
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         viewController.ShowAdvertisementDetailView(serviceModel: viewController.advertisementviewModel.getServicesListForIndex(indexItem: indexPath)!)
-        
     }
 
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }

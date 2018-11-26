@@ -12,7 +12,6 @@ class AdvertisementViewModel: NSObject {
     
     var serviceviewController:AdvertiseMentViewController!
     var serviceListArray:Array<ServicesModel> = []
-    //MARK: - Class variables
     
     func setviewModelcontroller(controller:AdvertiseMentViewController) -> Void {
         

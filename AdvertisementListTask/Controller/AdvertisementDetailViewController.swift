@@ -11,14 +11,11 @@ import UIKit
 class AdvertisementDetailViewController: UIViewController {
     
     @IBOutlet var advertisementView: AdvertisementDetailView!
-    
     var detailViewContent = ServicesModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         advertisementView.setController(controller: self)
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,19 +23,8 @@ class AdvertisementDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK:- Instance Methods
     func PopToPreviousViewController() {
         self.navigationController?.popViewController(animated: true)
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
