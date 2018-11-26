@@ -1,0 +1,6 @@
+framework module Pods_AdvertisementListTaskTests {
+  umbrella header "Pods-AdvertisementListTaskTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
