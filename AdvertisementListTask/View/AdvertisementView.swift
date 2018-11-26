@@ -13,6 +13,8 @@ class AdvertisementView: UIView , UITableViewDelegate, UITableViewDataSource {
     
     var viewController:AdvertiseMentViewController!
     
+    @IBOutlet weak var MainTitle: UILabel!
+    
     func setcontroller(controller:AdvertiseMentViewController) -> Void {
     
         viewController = controller

@@ -51,6 +51,7 @@ class AdvertisementViewModel: NSObject {
             let paramServicesDict = params[index] as! Dictionary<String,Any>
             
             let serviceModelObject = ServicesModel()
+            serviceModelObject.type = paramServicesDict["type"] as? String
             serviceModelObject.title = paramServicesDict["title"] as? String
             serviceModelObject.abstract = paramServicesDict["abstract"] as? String
             serviceModelObject.published_date = paramServicesDict["published_date"] as? String
@@ -105,6 +106,7 @@ class AdvertisementViewModel: NSObject {
 }
 
 class ServicesModel: NSObject {
+    var type:String?
     var title:String?
     var abstract:String?
     var published_date:String?

@@ -10,6 +10,7 @@ import UIKit
 
 class AdvertisementDetailView: UIView {
 
+    @IBOutlet weak var mainTitle_typeLb: UILabel!
     @IBOutlet weak var titleLb: UILabel!
     @IBOutlet weak var abstractionLb: UILabel!
     @IBOutlet weak var dateLb: UILabel!
@@ -27,7 +28,7 @@ class AdvertisementDetailView: UIView {
         
         // Do any additional setup after loading the view.
         let product:ServicesModel = viewController.detailViewContent
-        
+        mainTitle_typeLb.text = product.type
         titleLb.text = product.title
         abstractionLb.text = product.abstract
         dateLb.text = product.published_date
